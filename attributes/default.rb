@@ -3,6 +3,8 @@
 default["developer_mode"] = false  # we want secure passwords by default
 ########################################################################
 
+default["openstack"]["keystone"]["folsom"]["version"] = "2012.2+git201209171852~precise-0ubuntu1"
+
 # Adding these as blank
 # this needs to be here for the initial deep-merge to work
 default["credentials"]["EC2"]["admin"]["access"] = ""

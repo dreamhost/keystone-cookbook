@@ -19,6 +19,7 @@
 #
 
 ::Chef::Recipe.send(:include, Opscode::OpenSSL::Password)
+include_recipe "osops-utils::repo"
 include_recipe "osops-utils"
 
 # Allow for using a well known db password
